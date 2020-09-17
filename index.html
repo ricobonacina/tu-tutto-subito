@@ -55,19 +55,42 @@
         }
 
         .small-column {
-          flex: 45%;
+          flex: 0;
         }
 
         .big-column {
-          flex: 55%;
+          flex: 100%;
         }
 
         .fixed {
+
+        }
+
+        .book {
+            width:100%;
+        }
+
+        @media (min-width: 700px) {
+            .fixed {
             position: fixed;
             top: 50%;
             left: 10%;
             transform: translate(-10%, -50%);
+            }
+            .book {
+                max-height: 70vh;
+                max-width:45vw;
+                height:auto;
+                width:auto;
+            }
+            .small-column {
+                flex: 45%;
+            }
+            .big-column {
+              flex: 55%;
+            }
         }
+
 
         .middle-centered  {
             justify-content: center;
@@ -139,7 +162,7 @@ input:focus {
     </script>
 </head>
 <body>
-<img src="book.png" alt="Tu Tutto Subio - Enrico Bonacia" style="max-height: 70vh;max-width:45vw;height:auto;width:auto;" class="fixed" >
+<img src="book.png" alt="Tu Tutto Subio - Enrico Bonacia" class="fixed book" >
 
 <div class="row">
   <div class="small-column">
