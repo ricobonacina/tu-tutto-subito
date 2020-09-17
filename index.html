@@ -69,8 +69,18 @@
         .book {
             width:100%;
         }
+        .zone {
+            padding-bottom: 50px;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
 
         @media (min-width: 700px) {
+            .zone {
+            padding-bottom: 50px;
+            padding-right: 100px
+            padding-left: 0;
+        }
             .fixed {
             position: fixed;
             top: 50%;
@@ -102,8 +112,6 @@
             padding-top: 25vh;
         }
 
-
-
 /* arrow common style */
 .arrow {
   border-bottom: 2px solid #ffffff;
@@ -113,14 +121,11 @@
   transform: rotate(45deg);
     transition: 0.3s;
 }
-
 .arrow:hover {
   width: 40px;
   height: 40px;
     cursor: pointer;
 }
-
-
 input {
     border-width: 0;
     border-radius: 7px;
@@ -149,11 +154,6 @@ input:focus {
     height: 40px;
     padding: 20px;
 }
-        .zone {
-            padding-bottom: 50px;
-            padding-right: 100px
-        }
-
     </style>
     <script>
         function toBottom(){
